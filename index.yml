@@ -1,0 +1,12 @@
+---
+#######################
+# xft zenfiguration
+#######################
+author: Alejandro Ricoveri
+name: xft
+description: xft settings
+version: 0.0.1
+templates:
+    xresources:
+        output_file: '{{ @xft_conf_file }}'
+

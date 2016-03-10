@@ -1,0 +1,15 @@
+################################################
+# Jinja2 template for xft configuration file
+# ---------------------------
+# Author: Alejandro Ricoveri <axltxl.github.io>
+# vim: ft=yaml
+################################################
+
+# Essentials
+xft_install_prefix: '{{ "%s/.config/xft"|format(@zenfig_install_prefix) }}'
+xft_conf_file: '{{ "%s/config"|format(@xft_install_prefix) }}'
+
+# Fonts
+xft_font: '{{ @term_font }}'
+xft_font_size: '{{ @term_font_size }}'
+
