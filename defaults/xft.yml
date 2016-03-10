@@ -9,7 +9,13 @@
 xft_install_prefix: '{{ "%s/.config/xft"|format(@zenfig_install_prefix) }}'
 xft_conf_file: '{{ "%s/config"|format(@xft_install_prefix) }}'
 
-# Fonts
+# Font settings
 xft_font: '{{ @term_font }}'
 xft_font_size: '{{ @term_font_size }}'
-
+xft_dpi: '{{ @font_dpi }}'
+xft_antialias: '{{ @font_antialias }}'
+xft_rgba: rgb
+xft_autohint: false
+xft_hinting: '{{ @font_hinting }}'
+xft_hintstyle: '{{  @font_hintstyle }}'
+xft_lcdfilter: lcdlight

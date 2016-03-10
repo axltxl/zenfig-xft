@@ -1,12 +1,14 @@
-!-------------------------------------------------------------------------------
-! Xft settings
-! vim: ft=xdefaults
-!-------------------------------------------------------------------------------
+################################################
+# Jinja2 template for xft configuration file
+# ---------------------------
+# Author: Alejandro Ricoveri <axltxl.github.io>
+# vim: ft=jinja
+################################################
 
-Xft.dpi:       SCREEN_DPI
-Xft.antialias: true
-Xft.rgba:      rgb
-Xft.autohint:  false
-Xft.hinting:   true
-Xft.hintstyle: hintslight
-Xft.lcdfilter: lcdlight
+Xft.dpi:       {{ xft_font_dpi }}
+Xft.antialias: {{ xft_antialias }}
+Xft.rgba:      {{ xft_rgba }}
+Xft.autohint:  {{ xft_autohint }}
+Xft.hinting:   {{ xft_hinting }}
+Xft.hintstyle: {{ xft_hintstyle }}
+Xft.lcdfilter: {{ xft_lcdfilter }}
