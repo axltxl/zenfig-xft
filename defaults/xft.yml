@@ -6,8 +6,8 @@
 ################################################
 
 # Essentials
-xft_install_prefix: '{{ "%s/.config/xft"|format(@zenfig_install_prefix) }}'
-xft_conf_file: '{{ "%s/config"|format(@xft_install_prefix) }}'
+xft_install_prefix: '{{ "%s/.Xresources.d"|format(@zenfig_install_prefix) }}'
+xft_conf_file: '{{ "%s/xft"|format(@xft_install_prefix) }}'
 
 # Font settings
 xft_font: '{{ @font }}'
