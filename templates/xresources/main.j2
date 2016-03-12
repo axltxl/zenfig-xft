@@ -6,9 +6,9 @@
 ################################################
 
 Xft.dpi:       {{ xft_font_dpi }}
-Xft.antialias: {{ xft_antialias }}
+Xft.antialias: {{ xft_antialias|lower }}
 Xft.rgba:      {{ xft_rgba }}
-Xft.autohint:  {{ xft_autohint }}
-Xft.hinting:   {{ xft_hinting }}
+Xft.autohint:  {{ xft_autohint|lower }}
+Xft.hinting:   {{ xft_hinting|lower }}
 Xft.hintstyle: {{ xft_hintstyle }}
 Xft.lcdfilter: {{ xft_lcdfilter }}
